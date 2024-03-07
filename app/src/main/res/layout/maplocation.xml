@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaplocationActivity">
+
+    <TextView
+        android:id="@+id/StartLocationText"
+        android:layout_width="203dp"
+        android:layout_height="37dp"
+        android:text="@string/startlocation"
+        app:layout_constraintBottom_toTopOf="@+id/endLocationText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startLocationText" />
+
+    <EditText
+        android:id="@+id/startLocationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/StartLocationText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/endLocationText"
+        android:layout_width="205dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartLocationText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="255dp"
+        android:text="Destination"
+        app:layout_constraintBottom_toTopOf="@+id/PlanRouteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endLocationText" />
+
+    <Button
+        android:id="@+id/PlanRouteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="159dp"
+        android:text="PLAN ROUTE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/CurrentTimeView"
+        android:layout_width="145dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/AvgTimeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/AvgTimeView"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/CognitiveLoadView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentTimeView" />
+
+    <TextView
+        android:id="@+id/CognitiveLoadView"
+        android:layout_width="159dp"
+        android:layout_height="32dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/PlanRouteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AvgTimeView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
