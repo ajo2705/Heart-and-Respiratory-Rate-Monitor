@@ -23,7 +23,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MaplocationActivity extends AppCompatActivity implements SecondCallback{
-    private static final String API_KEY = "AIzaSyBp_GilJTYNmJ-CJbJG74ir8v8-WxfUiTU";
+    private static final String API_KEY = "API_KEY";
     public static final String HTTPS_MAPS_GOOGLEAPIS_COM_MAPS_API_DIRECTIONS_JSON = "https://maps.googleapis.com/maps/api/distancematrix/json";
     public static final String COGNITIVE_LOAD_VIEW = "COGNITIVE LOAD : ";
     public static final String AVG_TIME_VIEW = "AVERAGE TIME : ";
